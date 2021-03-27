@@ -117,7 +117,8 @@ h2 {
     justify-content: space-between; }
   .cursos_img {
     object-fit: cover;
-    max-width: 100%; }
+    max-width: 100%;
+    min-height: 100%; }
   .cursos_text {
     display: flex;
     flex-direction: column;

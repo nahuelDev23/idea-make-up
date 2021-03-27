@@ -1,11 +1,11 @@
 .bg-gray{
     background-color: #e6e6e6;
+    
 
 }
 .cursos{
     margin:0 auto;
     max-width: 1200px;
-    
     &_container{
        display: grid;
        grid-template-columns: 25% 50% 25%;
@@ -14,9 +14,10 @@
        
     }
     &_img{
+        //quitar imagen hasta q sea 1200px
         object-fit: cover;
         max-width: 100%;
-        //min-height: 130%;
+        min-height: 100%;
     }
     &_text{
         display: flex;
