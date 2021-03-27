@@ -1,0 +1,95 @@
+.mb-1{
+    margin-bottom: 1rem;
+}
+.center{
+    text-align: center;
+}
+
+.contacto{
+    margin-top: 1rem;
+    min-height: 70vh;
+    //font-family: lato;
+    background-color:#1D2B64;
+    color:rgba(255,255,255,1);
+    &_container{
+        max-width: 1200px;
+        margin: 0 auto;
+        
+    }
+    &_title,
+    &_subtitle{
+        text-align: center;
+    }
+    &_formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > label{
+           width: 50%;
+           margin-bottom: 1rem;
+           & > span{
+               margin-bottom: .5rem;
+           }
+           & > input{
+            width: 100%;
+            border-radius: 4px; 
+            border:none;
+            padding:.5rem;
+            outline: none;
+           }
+        }
+
+        & > select{
+            width: 50%;
+            margin-bottom: 1rem;
+
+            border-radius: 4px; 
+            border:none;
+            padding:.5rem;
+            outline: none;
+        }
+    }
+    &_subtitle-insideform{
+        display: flex;
+        margin-right: .5rem;
+    }
+    &_tipoformacion{
+        display: flex;
+        width: 50%;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+        & > label{
+            display: flex; 
+            justify-content: space-around;
+        }
+    }
+    &_selectdetail{
+        width: 50%;
+        margin-bottom: 1rem;
+        & > div {
+            width: 100%;
+        }
+    }
+    &_checkboxcontainer{
+        display: flex;
+        justify-content: space-around;
+        & > label{
+            display: flex;
+        }
+    }
+}
+.justify-center{
+    justify-content: center;
+}
+.full-width{
+    min-width: 50%;
+}
+
+.success{
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    padding: 1rem;
+    border-radius: 4px;
+}   

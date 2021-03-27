@@ -10,42 +10,253 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400&display=swap"
+        rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">   
+    <!--VUEJS-->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <title>LACA</title>
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="wrapper" id="app">
+        <header class='header'>
+            <div class="header_container">
+                <div class="header_logo">LOGO</div>
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item" v-scroll-to="'#profesional'">SER PROFESIONAL</li>
+                        <li class="header_item" v-scroll-to="'#cursos'">INFORMACIÓN DE CURSOS</li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
         <div class="banner">
             <div class='banner__metadata'>
                 <div class='banner__text'>
-                    <h2 class='banner__title'>Conoce nuestros cursos</h2>
+                    <h2 class='banner__title'>Conocé nuestros cursos</h2>
                     <p class='banner__subtitle'>
                         Viví de tu vocación.
                         Tu profesión, tu negocio.
                         Conocé la oferta de capacitación 2021
                         y formate con los creadores de belleza.</p>
+                        <span class='banner_button' v-scroll-to="'#contacto'">Consulá por los cursos 2020</span>
                 </div>
                 <img class="banner__img" src="./assets/img/pngwing.com.png" alt="">
             </div>
         </div>
-        <div class="speach">
-            <div class='speach__metadata'>
-                <img class="speach__img" src="./assets/img/engin-akyurt-vCuR6-yQySs-unsplash.jpg" alt="">
-                <div class='speach__text'>
-                    <h2 class='speach__title'>Laca Makeup</h2>
-                    <p class='speach__subtitle'>
-                        Ser profesional LACA</p>
-                        <p class='speach__content'>En LACA contamos con productos de última generación elaborados en nuestra planta y avalados por nuestra trayectoria.
-                        </p>
-                    <h3 class='speach__subtitle'>¿Por qué somos tu mejor opción?</h3>
-                    <p class='speach__content'>  Porque llevamos más de 60 años en el mercado como líderes en la elaboración de productos y formación de profesionales.</p>
+        <div class="profesional" id='profesional'>
+            <div class="profesional_container">
+                <img class='profesional_img' src="./assets/img/make.jpg" alt="">
+                <div class="profesional_text">
+                    <div class="profesional_one">
+                        <h2 class='profesional_title'>Ser profesional LACA</h2>
+                        <p>En LACA contamos con productos de última generación elaborados en nuestra planta y avalados
+                            por
+                            nuestra trayectoria.</p>
+                    </div>
+                    <div class="profesional_one">
+                        <h2 class='profesional_title'>¿Por qué somos tu mejor opción?</h2>
+                        <p>Porque llevamos más de 60 años en el mercado como líderes en la elaboración de productos y
+                            formación de profesionales.</p>
+                    </div>
+                    <div class="profesional_one">
+                        <h2 class='profesional_title center' > ¿Te animás?</h2>
+                        <span class='profesional_button' v-scroll-to="'#contacto'">Consulá por los cursos 2020</span>
+                    </div>
                 </div>
-                
+            </div>
+        </div>
+        <div class="bg-gray">
+            <div class="cursos" id='cursos'>
+                <div class="cursos_container">
+                    <div class="cursos_text">
+                        <div class="cursos_description">
+                            <h2 class="cursos_title">Estética Facial</h2>
+                            <p class="cursos_content">
+                                Cosmetología, Cosmiatría y Perfeccionamientos (Drenaje Linfático, Aparatología, Peeling
+                                Cosmetologico, Envejecimiento cutáneo, Capilares).
+                            </p>
+                        </div>
+                        <div class="cursos_description">
+                            <h2 class="cursos_title">Estética integral</h2>
+                            <p class="cursos_content">
+                                Estética Corporal, Masaje Profesional, Reflexología, Depilación, Perfeccionamientos (
+                                Drenaje linfático, Aparatología, Masaje miorelajante).
+                            </p>
+                        </div>
+                    </div>
+                    <img class="cursos_img" src="./assets/img/cursos.png" alt="">
+                    <div class="cursos_text">
+                        <div class="cursos_description">
+                            <h2 class="cursos_title">Maquillaje</h2>
+                            <p class="cursos_content">
+                                Maquillaje Social / Profesional, Maquillaje Artístico y Fx, Maquillaje terapeútico,
+                                Perfeccionamientos (Coaching look, Coloración personal).
+
+                            </p>
+                        </div>
+                        <div class="cursos_description">
+                            <h2 class="cursos_title">Manos y pies</h2>
+                            <p class="cursos_content">
+                                Manicuría y estética del pie, Pedicuría, Uñas Gelificadas, Uñas esculpidas acrílicas,
+                                Decoración de uñas y Perfeccionamientos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacto" id='contacto'>
+            <div class="contacto_container">
+                <h2 class="contacto_title">Contactanos</h2>
+                <h3 class="contacto_subtitle">Te enviaremos por email el enlace para que descargues toda la información
+                </h3>
+                <form id='form' class="contacto_formulario" method="POST" v-on:submit.prevent="enviarEmail"
+                    v-if='sended'>
+                    <label for="nombre">
+                        <span class="contacto_subtitle-insideform"> Nombre Completo</span>
+                        <input name="nombre" id="nombre" type="text" v-model='form.nombre' required>
+                    </label>
+                    <label for="email">
+                        <span class="contacto_subtitle-insideform"> Tu email </span>
+                        <input name="email" id="email" type="email" v-model='form.email' required>
+                    </label>
+                    <label for="localidad">
+                        <span class="contacto_subtitle-insideform">Localidad y Provincia</span>
+                        <input name="localidad" id="localidad" type="text" v-model='form.localidad' required>
+                    </label>
+                    <h3 class="contacto_subtitle-insideform">¿Que tipo de formación tenés?</h3>
+                    <div class="contacto_tipoformacion">
+                        <label for="noprofesional">
+                            <span class="contacto_subtitle-insideform">No profesional</span>
+                            <input type="radio" id="noprofesional" name="formacion" value="No profesional"
+                                v-model='form.formacion'>
+                        </label>
+                        <label for="profesional">
+                            <span class="contacto_subtitle-insideform">Profesional</span>
+                            <input type="radio" id="profesional" name="formacion" value="Profesional"
+                                v-model='form.formacion'>
+                        </label>
+                        <label for="profesionallaca">
+                            <span class="contacto_subtitle-insideform">Profesional LACA</span>
+                            <input type="radio" id="profesionallaca" name="formacion" value="Profesional LACA"
+                                v-model='form.formacion'>
+                        </label>
+                    </div>
+                    <select v-model='form.sucursal'>
+                        <option v-for='sucursal in sucursales'>{{sucursal}}</option>
+                    </select>
+                    <div class="contacto_selectdetail">
+                        <div v-if="form.sucursal == sucursales[0]">
+                            <h3 class="contacto_subtitle-insideform justify-center">¿Qué te interesa?</h3>
+                            <div class="contacto_checkboxcontainer">
+                                <label for="EsteticaIntegral">
+                                    <span class="contacto_subtitle-insideform">Estética integrall</span>
+                                    <input type="checkbox" id="EsteticaIntegral" value="Estética integral"
+                                        v-model="form.cursos">
+                                </label>
+
+                                <label for="EsteticaFacial">
+                                    <span class="contacto_subtitle-insideform">Estética Facial</span>
+                                    <input type="checkbox" id="EsteticaFacial" value="Estética Facial"
+                                        v-model="form.cursos">
+                                </label>
+
+                            </div>
+                        </div>
+                        <div v-if="form.sucursal == sucursales[1]">
+                            <h3 class="contacto_subtitle-insideform justify-center">¿Qué te interesa?</h3>
+                            <div class="contacto_checkboxcontainer">
+                                <label for="EsteticaIntegral">
+                                    <span class="contacto_subtitle-insideform">Estética integral</span>
+                                    <input type="checkbox" id="EsteticaIntegral" value="Estética integral"
+                                        v-model="form.cursos">
+                                </label>
+
+                                <label for="EsteticaFacial">
+                                    <span class="contacto_subtitle-insideform">Estética Facial</span>
+                                    <input type="checkbox" id="EsteticaFacial" value="Estética Facial"
+                                        v-model="form.cursos">
+                                </label>
+
+                                <label for="Maquillaje">
+                                    <span class="contacto_subtitle-insideform">Maquillaje</span>
+                                    <input type="checkbox" id="Maquillaje" value="Maquillaje" v-model="form.cursos">
+                                </label>
+
+                                <label for="ManosYPies">
+                                    <span class="contacto_subtitle-insideform">Manos y pies</span>
+                                    <input type="checkbox" id="ManosYPies" value="Manos y pies" v-model="form.cursos">
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class='profesional_button mb-1 full-width' type="submit">Enviarme la info</button>
+
+                </form>
+                <div class="contacto_formulario" v-if='!sended'>
+                    <h2 class="success">Gracias por contactarnos, te vamos a enviar la información que pediste en breve.
+                    </h2>
+                </div>
             </div>
         </div>
     </div>
+
+    <!--Scroll to-->
+    <script src="https://cdn.jsdelivr.net/npm/vue-scrollto"></script>
+    <!--Axios-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data() {
+                return {
+                    show: false,
+                    sended: true,
+                    form: {
+                        nombre: "",
+                        telefono: "",
+                        email: "",
+                        sucursal: 'Elegi',
+                        cursos: [],
+                        formacion: '',
+                        localidad: '',
+                    },
+                    sucursales: ['Moron', 'Caballito'],
+                }
+
+            },
+            methods: {
+                enviarEmail() {
+
+                    var data = new FormData();
+                    data.append("nombre", this.form.nombre);
+                    data.append("email", this.form.email);
+                    data.append("sucursal", this.form.sucursal);
+                    data.append("cursos", this.form.cursos);
+                    data.append("formacion", this.form.formacion);
+                    data.append("localidad", this.form.localidad);
+                    axios.post("enviar.php", data)
+                        .then((response) => {
+                            document.getElementById("form").reset();
+                            this.sended = false;
+                        })
+                        .catch((error) => {
+                            console.log(error);
+                        });
+                },
+
+            }
+        })
+    </script>
 </body>
 
 </html>

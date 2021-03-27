@@ -1,0 +1,55 @@
+.profesional{
+    background-color: #fff;
+    
+    &_container{
+        max-width: 1200px;
+        margin:0rem auto;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        padding:1rem 0;
+        grid-gap:4rem;
+    }
+
+    &_one{
+        margin-bottom: 2rem;
+        & > p {
+            margin: 0;
+        }
+    }
+    &_img{
+        width: 100%;
+        border-radius: 4px;
+    }
+    
+    &_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: left;
+        font-size: 1rem;
+        
+        height: 100%;
+    }
+
+    &_title{
+       
+        color:rgba(0,0,0,.7);
+        margin-bottom: .5rem;
+        font-size: 1.5rem;
+        
+    }
+    &_button{
+        display: block;
+        text-align: center;
+        margin:0 auto;
+        padding: 1rem;
+        border:1px solid #F8CDDA;
+        max-width: 300px;
+        border-radius: 4px;
+        background-color: #FFE8E8;
+        color:#1D2B64;
+        cursor: pointer;
+       
+    }
+}

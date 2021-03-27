@@ -1,0 +1,45 @@
+.bg-gray{
+    background-color: #e6e6e6;
+
+}
+.cursos{
+    margin:0 auto;
+    max-width: 1200px;
+    
+    &_container{
+       display: grid;
+       grid-template-columns: 25% 50% 25%;
+       align-items: center;
+       justify-content: space-between;
+       
+    }
+    &_img{
+        object-fit: cover;
+        max-width: 100%;
+        //min-height: 130%;
+    }
+    &_text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        //font-family: 'Lato', sans-serif;
+        min-height: 100%;
+    }
+    &_title{
+        position:relative;
+        font-size: 2rem;
+        font-weight: 400;
+        &::after{
+            content: '';
+            position: absolute;
+            height: 0.2rem;
+            width: 15%;
+            background:  #1D2B64;
+            bottom:-.5rem;
+            left: 0;
+        }
+    }
+    &_content{
+       
+    }
+}
