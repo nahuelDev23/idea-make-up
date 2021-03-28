@@ -8,21 +8,17 @@
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,500;1,300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/vue-agile/dist/VueAgile.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!--VUEJS-->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/vue-agile/dist/VueAgile.css">
     <title>LACA</title>
 </head>
 
@@ -33,7 +29,7 @@
                 <div class="header_logo">LOGO</div>
                 <nav class="header_nav">
                     <ul class="header_list">
-                        <li class="header_item" v-scroll-to="'#profesional'">SER PROFESIONAL</li>
+                        <li class="header_item" v-scroll-to="'#profesional'">SER PROFESIONAL </li>
                         <li class="header_item" v-scroll-to="'#cursos'">INFORMACIÓN DE CURSOS</li>
                     </ul>
                 </nav>
@@ -41,47 +37,47 @@
         </header>
         <template>
             <div class='slider_container'>
-
-            
-            <agile :options="myOptions" ref="carousel">
-                <div class="slide">
-                    <div class="banner">
-                        <div class='banner__metadata'>
-                            <div class='banner__text'>
-                                <h2 class='banner__title'>Conocé nuestros cursos</h2>
-                                <p class='banner__subtitle'>
-                                    Viví de tu vocación.
-                                    Tu profesión, tu negocio.
-                                    Conocé la oferta de capacitación 2021
-                                    y formate con los creadores de belleza.</p>
-                                <span class='banner_button' v-scroll-to="'#contacto'">Consulá por los cursos 2020</span>
+                <agile :options="myOptions" ref="carousel">
+                    <div class="slide">
+                        <div class="banner">
+                            <div class='banner__metadata'>
+                                <div class='banner__text'>
+                                    <h2 class='banner__title'>Conocé nuestros cursos</h2>
+                                    <p class='banner__subtitle'>
+                                        Viví de tu vocación.
+                                        Tu profesión, tu negocio.
+                                        Conocé la oferta de capacitación 2021
+                                        y formate con los creadores de belleza.</p>
+                                    <span class='banner_button' v-scroll-to="'#contacto'">Consulá por los cursos
+                                        2020</span>
+                                </div>
+                                <img class="banner__img" src="./assets/img/pngwing.com.png" alt="">
                             </div>
-                            <img class="banner__img" src="./assets/img/pngwing.com.png" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="slide">
-                    <div class="banner">
-                        <div class='banner__metadata'>
-                            <div class='banner__text'>
-                                <h2 class='banner__title'>Conocé nuestros cursos</h2>
-                                <p class='banner__subtitle'>
-                                    Viví de tu vocación.
-                                    Tu profesión, tu negocio.
-                                    Conocé la oferta de capacitación 2021
-                                    y formate con los creadores de belleza.</p>
-                                <span class='banner_button' v-scroll-to="'#contacto'">Consulá por los cursos 2020</span>
+                    <div class="slide">
+                        <div class="banner">
+                            <div class='banner__metadata'>
+                                <div class='banner__text'>
+                                    <h2 class='banner__title'>Conocé nuestros cursos</h2>
+                                    <p class='banner__subtitle'>
+                                        Viví de tu vocación.
+                                        Tu profesión, tu negocio.
+                                        Conocé la oferta de capacitación 2021
+                                        y formate con los creadores de belleza.</p>
+                                    <span class='banner_button' v-scroll-to="'#contacto'">Consulá por los cursos
+                                        2020</span>
+                                </div>
+                                <img class="banner__img" src="./assets/img/pngwing.com.png" alt="">
                             </div>
-                            <img class="banner__img" src="./assets/img/pngwing.com.png" alt="">
                         </div>
                     </div>
+                </agile>
+                <div class='btn-c'>
+                    <span class='btn-2' @click="$refs.carousel.goToPrev()"><i class="fas fa-chevron-left"></i></span>
+                    <span class='btn' @click="$refs.carousel.goToNext()"><i class="fas fa-chevron-right"></i></span>
                 </div>
-            </agile>
-            <div class='btn-c'>
-                <span class='btn-2' @click="$refs.carousel.goToPrev()">prev</span>
-                <span class='btn' @click="$refs.carousel.goToNext()">next</span>
             </div>
-        </div>
         </template>
 
         <div class="profesional" id='profesional'>
@@ -90,14 +86,11 @@
                 <div class="profesional_text">
                     <div class="profesional_one">
                         <h2 class='profesional_title'>Ser profesional LACA</h2>
-                        <p>En LACA contamos con productos de última generación elaborados en nuestra planta y avalados
-                            por
-                            nuestra trayectoria.</p>
+                        <p>En LACA contamos con productos de última generación elaborados en nuestra planta y avalados por nuestra trayectoria.</p>
                     </div>
                     <div class="profesional_one">
                         <h2 class='profesional_title'>¿Por qué somos tu mejor opción?</h2>
-                        <p>Porque llevamos más de 60 años en el mercado como líderes en la elaboración de productos y
-                            formación de profesionales.</p>
+                        <p>Porque llevamos más de 60 años en el mercado como líderes en la elaboración de productos y formación de profesionales.</p>
                     </div>
                     <div class="profesional_one">
                         <h2 class='profesional_title center'> ¿Te animás?</h2>
@@ -113,15 +106,13 @@
                         <div class="cursos_description">
                             <h2 class="cursos_title">Estética Facial</h2>
                             <p class="cursos_content">
-                                Cosmetología, Cosmiatría y Perfeccionamientos (Drenaje Linfático, Aparatología, Peeling
-                                Cosmetologico, Envejecimiento cutáneo, Capilares).
+                                Cosmetología, Cosmiatría y Perfeccionamientos (Drenaje Linfático, Aparatología, Peeling Cosmetologico, Envejecimiento cutáneo, Capilares).
                             </p>
                         </div>
                         <div class="cursos_description">
                             <h2 class="cursos_title">Estética integral</h2>
                             <p class="cursos_content">
-                                Estética Corporal, Masaje Profesional, Reflexología, Depilación, Perfeccionamientos (
-                                Drenaje linfático, Aparatología, Masaje miorelajante).
+                                Estética Corporal, Masaje Profesional, Reflexología, Depilación, Perfeccionamientos ( Drenaje linfático, Aparatología, Masaje miorelajante).
                             </p>
                         </div>
                     </div>
@@ -130,16 +121,14 @@
                         <div class="cursos_description">
                             <h2 class="cursos_title">Maquillaje</h2>
                             <p class="cursos_content">
-                                Maquillaje Social / Profesional, Maquillaje Artístico y Fx, Maquillaje terapeútico,
-                                Perfeccionamientos (Coaching look, Coloración personal).
+                                Maquillaje Social / Profesional, Maquillaje Artístico y Fx, Maquillaje terapeútico, Perfeccionamientos (Coaching look, Coloración personal).
 
                             </p>
                         </div>
                         <div class="cursos_description">
                             <h2 class="cursos_title">Manos y pies</h2>
                             <p class="cursos_content">
-                                Manicuría y estética del pie, Pedicuría, Uñas Gelificadas, Uñas esculpidas acrílicas,
-                                Decoración de uñas y Perfeccionamientos.
+                                Manicuría y estética del pie, Pedicuría, Uñas Gelificadas, Uñas esculpidas acrílicas, Decoración de uñas y Perfeccionamientos.
                             </p>
                         </div>
                     </div>
@@ -151,8 +140,7 @@
                 <h2 class="contacto_title">Contactanos</h2>
                 <h3 class="contacto_subtitle">Te enviaremos por email el enlace para que descargues toda la información
                 </h3>
-                <form id='form' class="contacto_formulario" method="POST" v-on:submit.prevent="enviarEmail"
-                    v-if='sended'>
+                <form id='form' class="contacto_formulario" method="POST" v-on:submit.prevent="enviarEmail" v-if='sended'>
                     <label for="nombre">
                         <span class="contacto_subtitle-insideform"> Nombre Completo</span>
                         <input name="nombre" id="nombre" type="text" v-model='form.nombre' required>
@@ -272,8 +260,7 @@
                     myOptions: {
                         navButtons: false,
                         dots: false,
-                        responsive: [
-                            {
+                        responsive: [{
                                 breakpoint: 600,
                                 settings: {
                                     dots: false,

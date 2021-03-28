@@ -72,10 +72,17 @@ h2 {
   position: absolute;
   display: flex;
   justify-content: space-between;
+  font-size: 2rem;
   width: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.fa-chevron-right {
+  padding-right: 1rem; }
+
+.fa-chevron-left {
+  padding-left: 1rem; }
 
 .profesional {
   background-color: #fff; }
