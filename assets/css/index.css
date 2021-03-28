@@ -31,6 +31,7 @@ h2 {
   font-family: 'Poppins', sans-serif; }
 
 .banner {
+  position: relative;
   background: #2229c3;
   background: linear-gradient(30deg, #1D2B64, #F8CDDA);
   min-height: 500px;
@@ -63,6 +64,18 @@ h2 {
     background-color: #FFE8E8;
     color: #1D2B64;
     cursor: pointer; }
+
+.slider_container {
+  position: relative; }
+
+.btn-c {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 .profesional {
   background-color: #fff; }

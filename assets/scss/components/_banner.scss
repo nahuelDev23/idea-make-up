@@ -4,6 +4,7 @@
 }
 
 .banner{
+    position: relative;
 	background: rgb(34,41,195);
 	background: linear-gradient(30deg,#1D2B64, #F8CDDA);
  	min-height:500px;
@@ -46,4 +47,17 @@
         color:#1D2B64;
         cursor: pointer;
     }
+}
+.slider_container{
+    position: relative;
+}
+
+.btn-c{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
