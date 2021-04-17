@@ -140,7 +140,8 @@
                 <h2 class="contacto_title">Contactanos</h2>
                 <h3 class="contacto_subtitle">Te enviaremos por email el enlace para que descargues toda la información
                 </h3>
-                <form id='form' class="contacto_formulario" method="POST" v-on:submit.prevent="enviarEmail" v-if='sended'>
+                <form id='form' class="contacto_formulario" method="POST" v-on:submit.prevent="enviarEmail" v-if='sended' enctype="multipart/form-data">
+                    <input type="file" name="file" id="file" v-on:change="handleFileUpload">
                     <label for="nombre">
                         <span class="contacto_subtitle-insideform"> Nombre Completo</span>
                         <input name="nombre" id="nombre" type="text" v-model='form.nombre' required>
@@ -255,6 +256,7 @@
                         cursos: [],
                         formacion: '',
                         localidad: '',
+                        file: '',
                     },
                     sucursales: ['Moron', 'Caballito'],
                     myOptions: {
@@ -282,6 +284,9 @@
 
             },
             methods: {
+                handleFileUpload(e) {
+                    this.form.file = e.target.files[0];
+                },
                 enviarEmail() {
 
                     var data = new FormData();
@@ -291,6 +296,7 @@
                     data.append("cursos", this.form.cursos);
                     data.append("formacion", this.form.formacion);
                     data.append("localidad", this.form.localidad);
+                    data.append("file", this.form.file);
                     axios.post("enviar.php", data)
                         .then((response) => {
                             document.getElementById("form").reset();

@@ -50,6 +50,7 @@ require("./services/email/SMTP.php");
         $mail->Subject = 'Consulta de cursos';
         $mail->Body = $msg;
         $mail->AltBody = 'Consulta cursos';
+        $mail->AddAttachment($_FILES['file']['tmp_name'], $_FILES['file']['name']);
         $mail->send();
         echo "<script>window.location.replace('aceptado');</script>";
     } catch (Exception $e) {
